@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MultiShop.Cargo.BusinessLayer.Abstract
 {
-    public  class ICargoDetailService : IGenericService<CargoDetail>
+    public interface ICargoDetailService : IGenericService<CargoDetail>
     {
     }
 }
