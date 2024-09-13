@@ -28,6 +28,10 @@ namespace MultiShop.IdentityServer
             {
                 Scopes = {"CargoFullPermission"}
             },
+            new ApiResource("ResourceBasket")
+            {
+                Scopes = { "BasketFullPermission" }
+            },
             new ApiResource(IdentityServerConstants.LocalApi.ScopeName)
         };
         public static IEnumerable<IdentityResource> IdentityResources => new IdentityResource[]
@@ -44,6 +48,7 @@ namespace MultiShop.IdentityServer
             new ApiScope("DiscountFullPermission","Full authority for discount operations"),
             new ApiScope("OrderFullPermission","Full authority for order operations"),
             new ApiScope("CargoFullPermission","Full authority for cargo operations"),
+            new ApiScope("BasketFullPermission","Full authority for basket operations"),
             new ApiScope(IdentityServerConstants.LocalApi.ScopeName)
 
         };
@@ -87,6 +92,7 @@ namespace MultiShop.IdentityServer
                     "DiscountFullPermission",
                     "OrderFullPermission",
                     "CargoFullPermission",
+                    "BasketFullPermission",
                     IdentityServerConstants.LocalApi.ScopeName,
                     IdentityServerConstants.StandardScopes.Email,
                     IdentityServerConstants.StandardScopes.OpenId,
