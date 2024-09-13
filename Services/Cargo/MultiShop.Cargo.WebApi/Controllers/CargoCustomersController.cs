@@ -68,6 +68,7 @@ namespace MultiShop.Cargo.WebApi.Controllers
                 Phone = updateCargoCustomerDto.Phone,
                 Surname = updateCargoCustomerDto.Surname
             };
+            _cargoCustomerService.TUpdate(cargoCustomer);
             return Ok("Cargo Customer updated");
         }
     }

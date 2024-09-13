@@ -53,6 +53,7 @@ namespace MultiShop.Cargo.WebApi.Controllers
                 CargoCompanyId = updateCargoCompanyDto.CargoCompanyId,
                 CargoCompanyName = updateCargoCompanyDto.CargoCompanyName
             };
+            _cargoCompanyService.TUpdate(cargoCompany);
             return Ok("Cargo Company updated");
         }
     }

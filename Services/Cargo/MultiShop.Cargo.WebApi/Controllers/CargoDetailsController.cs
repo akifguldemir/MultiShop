@@ -64,6 +64,7 @@ namespace MultiShop.Cargo.WebApi.Controllers
                 ReceiverCustomer = updateCargoDetailDto.ReceiverCustomer,
                 SenderCustomer = updateCargoDetailDto.SenderCustomer,
             };
+            _cargoDetailService.TUpdate(cargoDetail);
             return Ok("Cargo Detail updated");
         }
     }

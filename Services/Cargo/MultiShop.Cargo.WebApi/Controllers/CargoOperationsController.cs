@@ -62,6 +62,7 @@ namespace MultiShop.Cargo.WebApi.Controllers
                 Description = updateCargoOperationDto.Description,
                 OperationDate = updateCargoOperationDto.OperationDate
             };
+            _cargoOperationService.TUpdate(cargoOperation);
             return Ok("Cargo Operation updated");
         }
     }
