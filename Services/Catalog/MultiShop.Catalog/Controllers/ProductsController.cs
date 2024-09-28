@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MultiShop.Catalog.Dtos.ProductDtos;
 using MultiShop.Catalog.Services.ProductServices;
+using System.Runtime.InteropServices;
 
 namespace MultiShop.Catalog.Controllers
 {
@@ -52,6 +53,13 @@ namespace MultiShop.Catalog.Controllers
         {
             await _ProductService.UpdateProductAsync(updateProductDto);
             return Ok("Product updated");
+        }
+
+        [HttpGet("ProductListWithCategory")]
+        public async Task<IActionResult> ProductListWithCategory()
+        {
+            var values = await _ProductService.GetProductsWithCategoryAsync();
+            return Ok(values);
         }
     }
 }
