@@ -7,11 +7,11 @@ namespace MultiShop.Catalog.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class FeatureController : ControllerBase
+    public class FeaturesController : ControllerBase
     {
         private readonly IFeatureService _FeatureService;
 
-        public FeatureController(IFeatureService FeatureService)
+        public FeaturesController(IFeatureService FeatureService)
         {
             _FeatureService = FeatureService;
         }
