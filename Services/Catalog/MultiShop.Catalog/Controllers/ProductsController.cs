@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 
 namespace MultiShop.Catalog.Controllers
 {
-    //[Authorize]
+    [Authorize]
     [AllowAnonymous]
     [Route("api/[controller]")]
     [ApiController]
