@@ -100,7 +100,7 @@
 
     },
 
-    Message Mikroservis
+    //Message Mikroservis
     {
       "DownstreamPathTemplate": "/api/{everything}",
       "DownstreamScheme": "http",
