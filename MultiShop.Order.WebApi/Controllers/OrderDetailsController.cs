@@ -10,6 +10,7 @@ namespace MultiShop.Order.WebApi.Controllers
     
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class OrderDetailsController : ControllerBase
     {
         private readonly GetOrderDetailQueryHandler _getOrderDetailQueryHandler;

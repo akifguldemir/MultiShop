@@ -9,6 +9,7 @@ namespace MultiShop.Order.WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class AddressesController : ControllerBase
     {
         private readonly GetAddressQueryHandler _addressQueryHandler;

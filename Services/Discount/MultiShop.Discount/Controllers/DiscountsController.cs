@@ -54,5 +54,19 @@ namespace MultiShop.Discount.Controllers
             return Ok("Coupon updated");
         }
 
+        [HttpGet("GetCodeDetailByCode")]
+        public async Task<IActionResult> GetCodeDetailByCode(string code)
+        {
+            var values = await _discountServices.GetCodeDetailByCodeAsync(code);
+            return Ok(values);
+        }
+
+        [HttpGet("GetDiscountCouponRate")]
+        public IActionResult GetDiscountCouponRate(string code)
+        {
+            var values = _discountServices.GetDiscountCouponRateAsync(code);
+            return Ok(values);
+        }
+
     }
 }
