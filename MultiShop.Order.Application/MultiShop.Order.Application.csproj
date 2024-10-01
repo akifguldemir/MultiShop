@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Features\Mediator\" />
+    <Folder Include="Features\Mediator\Commands\OrderingCommands\" />
   </ItemGroup>
 
   <ItemGroup>

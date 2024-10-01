@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MultiShop.Order.Application.Features.CQRS.Results.OrderDetailResults
+namespace MultiShop.Order.Application.Features.Mediator.Results.OrderingResults
 {
     public class GetOrderingByUserIdQueryResult
     {
