@@ -107,7 +107,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7078
+          "Port": 7154
         }
       ],
       "UpstreamPathTemplate": "/services/message/{everything}",
