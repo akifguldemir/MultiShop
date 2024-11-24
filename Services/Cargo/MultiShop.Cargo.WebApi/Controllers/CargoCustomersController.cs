@@ -6,7 +6,8 @@ using MultiShop.Cargo.EntityLayer.Concrete;
 
 namespace MultiShop.Cargo.WebApi.Controllers
 {
-    [Authorize]
+    //[Authorize]
+    [AllowAnonymous]
     [Route("api/[controller]")]
     [ApiController]
     public class CargoCustomersController : ControllerBase
@@ -36,7 +37,9 @@ namespace MultiShop.Cargo.WebApi.Controllers
                 Email = createCargoCustomerDto.Email,
                 Name = createCargoCustomerDto.Name,
                 Phone = createCargoCustomerDto.Phone,
-                Surname = createCargoCustomerDto.Surname
+                Surname = createCargoCustomerDto.Surname,
+                UserCustomerId = createCargoCustomerDto.UserCustomerId
+
             };
             _cargoCustomerService.TInsert(cargoCustomer);
             return Ok("Cargo Customer created");
@@ -72,6 +75,13 @@ namespace MultiShop.Cargo.WebApi.Controllers
             };
             _cargoCustomerService.TUpdate(cargoCustomer);
             return Ok("Cargo Customer updated");
+        }
+
+        [HttpGet("GetCargoCustomerById")]
+
+        public IActionResult GetCargoCustomerById(string id)
+        {
+            return Ok(_cargoCustomerService.TGetCargoCustomerById(id));
         }
     }
 }
