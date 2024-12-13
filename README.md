@@ -9,6 +9,7 @@ Docker<br>
 MongoDB<br>
 PostgreSQL<br>
 MSSQL<br>
+Redis<br>
 SQLLite<br>
 Identity Server<br>
 Api Gateway<br>
