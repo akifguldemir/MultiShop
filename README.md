@@ -2,7 +2,7 @@
 
 Microservice E-Commerce Project
 
-Technologies                                  
+Technologies<br>                                  
 Dapper
 Docker
 MongoDB
